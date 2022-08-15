@@ -75,7 +75,7 @@
 
             </div>
         </div>
-    </section >
+    </section>
 
     <section id="Services" class="bg-light p-5">
         <div class="container">
@@ -90,7 +90,7 @@
                                 as rsponsive
                                 web designing to help the clients reach their full potential. Put your business online,
                                 and get more sales and leads. </p>
-                                <a class="enquire btn btn-primary" href="#Enquire">Enquire</a>
+                            <a class="enquire btn btn-primary" href="#Enquire">Enquire</a>
                         </div>
                     </div>
 
@@ -119,7 +119,7 @@
                             <p class="card-text">Offering a full range of immigration services for those who want to
                                 immigrate or visit abroad. From student visas and work permits to skilled workers and
                                 investors,we can help (Partner firm- AJ Immigration Consultant Inc) </p>
-                                <a class="enquire btn btn-primary" href="#Enquire">Enquire</a>
+                            <a class="enquire btn btn-primary" href="#Enquire">Enquire</a>
                         </div>
                     </div>
 
@@ -151,7 +151,8 @@
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-success">
-                            <a class="enquire btn btn-primary" href="https://www.agronature.org/" target="_blank">Visit</a>
+                            <a class="enquire btn btn-primary" href="https://www.agronature.org/"
+                                target="_blank">Visit</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +194,8 @@
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-danger">
-                            <a class="enquire btn btn-primary" href="https://www.esafbank.com/" target="_blank">Visit</a>
+                            <a class="enquire btn btn-primary" href="https://www.esafbank.com/"
+                                target="_blank">Visit</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +219,8 @@
                                 <li>Jackfruit Chips</li>
                                 <li>Banana Chips</li>
                             </p>
-                            <a class="enquire btn btn-primary" href="https://www.facebook.com/vembanattufoodscochin" target="_blank">Know more</a>
+                            <a class="enquire btn btn-primary" href="https://www.facebook.com/vembanattufoodscochin"
+                                target="_blank">Know more</a>
                         </div>
 
                     </div>
@@ -237,7 +240,8 @@
 
 
                             </p>
-                            <a class="enquire btn btn-primary" href="https://www.ajimmigrations.com/" target="_blank">Know more
+                            <a class="enquire btn btn-primary" href="https://www.ajimmigrations.com/"
+                                target="_blank">Know more
                             </a>
 
                         </div>
@@ -274,33 +278,39 @@
                 <div class="row">
                     <h1 class="text-center font-weight-bold pb-2 text-dark">Enquiry-form</h1>
                     <div class="col-md-6">
-                        <form name="RegForm" onsubmit="return formvalidation()" method="post" action="https://script.google.com/macros/s/AKfycbwUd0GpPu4X7DDsYolYpygVeqP3cUvj447byKvJ6vq294FJotQZOMRe12l_LJDPzZnp1Q/exec">
+                        <form name="RegForm" method="post"
+                            action="https://script.google.com/macros/s/AKfycbwUd0GpPu4X7DDsYolYpygVeqP3cUvj447byKvJ6vq294FJotQZOMRe12l_LJDPzZnp1Q/exec">
                             <fieldset active>
                                 <legend>Your Information</legend>
                                 <div class="mb-3">
                                     <label for="disabledTextInput" class="form-label">Name</label>
-                                    <input type="text" Name="Name" id="TextInput"
+                                    <input type="text" Name="Name" onkeyup="validateName()" required id="NameInput"
                                         class="form-control" placeholder="Name">
+                                    <span id="name-error"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="disabledTextInput" class="form-label">Address</label>
-                                    <input type="text" Name="Address" data-validetta="required,Address" id="TextInput"
-                                        class="form-control" placeholder="Address">
+                                    <input type="text" Name="Address" onkeyup="validateAddress()" required
+                                        id="AddressInput" class="form-control" placeholder="Address">
+                                    <span id="address-error"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="disabledTextInput" class="form-label">Email</label>
-                                    <input type="email" Name="EMail" data-validetta="required,Email" id="TextInput"
+                                    <input type="email" Name="EMail" onkeyup="validateEmail()" id="EmailInput"
                                         class="form-control" placeholder="Email">
+                                    <span id="email-error"></span>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="disabledTextInput" class="form-label disabled" >Contact Number(with
+                                    <label for="disabledTextInput" class="form-label disabled">Contact Number(with
                                         country code)</label>
-                                    <input type="mobile" Name="Telephone" data-validetta="required,Contact" id="TextInput"
-                                        class="form-control" placeholder="Contact number with country code">
+                                    <input type="number " Name="Telephone" onkeyup="validateNumber()" required
+                                        id="NumberInput" class="form-control"
+                                        placeholder="Contact number with country code">
+                                    <span id="number-error"></span>
                                 </div>
-                                
+
                                 <div class="mb-3">
-                                    
+
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </fieldset>
@@ -312,7 +322,7 @@
                         <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                             <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameborder="0" style="border:0" allowfullscreen></iframe>
-                            
+
                             </form>
                         </div>
 
@@ -322,79 +332,83 @@
             </div>
         </section>
 
-<footer>
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Personal Details
-              </h6>
-              <p>
-                Rahul Nath  <br>Vembanattu Kizhakepram North Paravur Ernakulam Kerala India-683520
-              </p>
+        <footer>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Personal Details
+                            </h6>
+                            <p>
+                                Rahul Nath <br>Vembanattu Kizhakepram North Paravur Ernakulam Kerala India-683520
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Connect me on social- networks
+                            </h6>
+                            <p>
+                                <a href="https://www.facebook.com/rahul.nath.528/" target="_blank"
+                                    class="text-reset">facebook</a>
+                                <i class="bi bi-facebook"></i>
+                            </p>
+                            <p>
+                                <a href="ttps://www.instagram.com/rahul_nath_" target="_blank"
+                                    class="text-reset">Instagram</a>
+                                <i class="bi bi-instagram"></i>
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com/rahul-nath-537399151" target="_blank"
+                                    class="text-reset">LinkedIn</a>
+                                <i class="bi bi-linkedin"></i>
+                            </p>
+                            <p>
+                                <a href="https://wa.me/qr/F4N4VGQ3CWA6A1" target="_blank"
+                                    class="text-reset">WhatsApp</a>
+                                <i class="bi bi-whatsapp"></i>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Cochin Kerala India</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                rahulnath@hotmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 91 9562296779</p>
+                            <p><i class="fas fa-print me-3"></i> + 91 8129627061</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright
+
             </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-           
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Connect me on social- networks
-              </h6>
-              <p>
-                <a href="https://www.facebook.com/rahul.nath.528/" target="_blank" class="text-reset">facebook</a>
-                <i class="bi bi-facebook"></i>
-              </p>
-              <p>
-                <a href="ttps://www.instagram.com/rahul_nath_" target="_blank" class="text-reset">Instagram</a>
-                <i class="bi bi-instagram"></i>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/rahul-nath-537399151" target="_blank" class="text-reset">LinkedIn</a>
-                <i class="bi bi-linkedin"></i>
-              </p>
-              <p>
-                <a href="https://wa.me/qr/F4N4VGQ3CWA6A1" target="_blank" class="text-reset">WhatsApp</a>
-                <i class="bi bi-whatsapp"></i>
-              </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> Cochin Kerala India</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                rahulnath@hotmail.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 91 9562296779</p>
-              <p><i class="fas fa-print me-3"></i> + 91 8129627061</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright
-      
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
 
 
@@ -405,54 +419,111 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"></script>
-            
-    <script>
-        function formvalidation() {
-            var name =
-                document.forms.RegForm.Name.value;
-            var email =
-                document.forms.RegForm.EMail.value;
-            var phone =
-                document.forms.RegForm.Telephone.value;
-          
-            
-            var address =
-                document.forms.RegForm.Address.value;
-    
-            
-    
-             
-            if (name =="") {
-                window.alert("Please enter your name properly.");
-                name.focus();
-                return false;
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="js/jquery.stellar.min.js"></script>
+        <!-- Easy PieChart -->
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <!-- Google Map -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+        <script src="js/google_map.js"></script>
+
+        <!-- Main -->
+        <script src="js/main.js"></script>
+
+
+        <!-- <script src="js/validate.js"></script> -->
+
+
+
+        <script>
+
+            var nameError = document.getElementById('name-error');
+            var emailError = document.getElementById('email-error');
+            var addressError = document.getElementById('address-error');
+            var numberError = document.getElementById('number-error')
+
+
+            function validateName() {
+                var name = document.getElementById('NameInput').value.trim();
+
+                if (name.length == 0) {
+                    nameError.innerHTML = 'Name is Required';
+                    nameError.style.color = 'red'
+                    return false;
+                }
+
+                if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                    nameError.innerHTML = 'Write a FullName';
+                    nameError.style.color = 'red'
+                    return false;
+                }
+
+                nameError.innerHTML = 'Name is valid';
+                nameError.style.color = 'green'
+                return true;
             }
-    
-            if (address =="") {
-                window.alert("Please enter your address.");
-                address.focus();
-                return false;
+            function validateEmail() {
+                var email = document.getElementById('EmailInput').value;
+                if (email.length == 0) {
+                    emailError.innerHTML = 'Email is Required';
+                    emailError.style.color = 'red'
+                    return false;
+                }
+
+                if (!email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                    emailError.innerHTML = 'Email is Invalid';
+                    emailError.style.color = 'red'
+                    return false;
+                }
+                emailError.innerHTML = 'Email is valid';
+                emailError.style.color = 'green'
+                return true;
             }
-             
-            if (email =="") {
-                window.alert("Please enter a valid e-mail address.");
-                email.focus();
-                return false;
+            function validateNumber() {
+                var number = document.getElementById('NumberInput').value;
+                if (number.length == 0) {
+                    numberError.innerHTML = 'Number is Required';
+                    numberError.style.color = 'red'
+                    return false;
+                }
+                else {
+                    numberError.innerHTML = 'Number is valid';
+                    numberError.style.color = 'green'
+                    return true;
+                }
             }
-              
-          
-    
-         
-            if (phone =="") {
-                alert("Please enter valid phone number.");
-                phone.focus();
-                return false;
+
+            function validateAddress() {
+                var address = document.getElementById('AddressInput').value;
+                if (address.length == 0) {
+                    addressError.innerHTML = 'Address is Required';
+                    addressError.style.color = 'red'
+                    return false;
+                }
+                else {
+                    addressError.innerHTML = 'Address is valid';
+                    addressError.style.color = 'green'
+                    return true;
+                }
             }
-    
-            return true;
-        }
-    </script>
-    
+
+
+
+
+
+        </script>
+
 
 </body>
 
